@@ -1,0 +1,22 @@
+.button {
+  font-family: 'Kanit', sans-serif;
+  padding: 0 5px;
+  margin: 5px 4px 5px 0;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  line-height: 34px;
+  text-decoration: none;
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s;
+}
+.button:disabled {
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
+  cursor: not-allowed;
+}

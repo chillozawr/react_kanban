@@ -1,0 +1,16 @@
+@import "./public/fonts/fonts";
+.wrapper {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

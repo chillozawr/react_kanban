@@ -1,0 +1,82 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  position: relative;
+  background-color: blueviolet;
+  width: 30%;
+  min-height: 150px;
+  height: 100%;
+  min-width:330px;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+  .heading {
+    overflow: hidden;
+    margin: 0 auto;
+    height: 5%;
+    background: azure no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    //margin-bottom: 35px;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+  }
+
+  .wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+  }
+
+}
+
+.taskAdding {
+  position: relative;
+  margin: 5px auto;
+  text-align: center;
+  .addTask {
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  .dashboard {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
